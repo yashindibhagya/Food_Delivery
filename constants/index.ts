@@ -1,5 +1,5 @@
-import backgroundImage from "../assets/images/coffee.jpg";
 import coffee from "../assets/images/1.jpg";
+import backgroundImage from "../assets/images/coffee.jpg";
 
 export const CATEGORIES: { id: string; name: string }[] = [
     {
@@ -7,7 +7,7 @@ export const CATEGORIES: { id: string; name: string }[] = [
         name: "All",
     },
     {
-        id: "1",
+        id: "2", // Fixed: changed from "1" to "2"
         name: "Burger",
     },
     {
@@ -18,10 +18,10 @@ export const CATEGORIES: { id: string; name: string }[] = [
         id: "4",
         name: "Wrap",
     },
-
 ]
 
-export const offers: { id: number; title: string; image: any; ... } = [
+// Fixed: Removed the invalid "..." syntax and properly defined the type
+export const offers: { id: number; title: string; image: any; color: string }[] = [
     {
         id: 1,
         title: "SUMMER COMBO",
@@ -32,13 +32,13 @@ export const offers: { id: number; title: string; image: any; ... } = [
         id: 2,
         title: "SUMMER COMBO",
         image: backgroundImage,
-        color: "#D33B0D"
+        color: "#D33B5D"
     },
     {
         id: 3,
         title: "SUMMER COMBO",
         image: backgroundImage,
-        color: "#D33B0D"
+        color: "#D37B0D"
     }
 ]
 
